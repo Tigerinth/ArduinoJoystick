@@ -16,6 +16,7 @@ Joystick_ Joystick(JOYSTICK_DEFAULT_REPORT_ID, JOYSTICK_TYPE_GAMEPAD,
 //const bool initAutoSendState = true;
 //int ZGazkolu = 0;
 void setup() {
+  //Buton pinleri    | Button pins
   pinMode(2, INPUT_PULLUP);
   pinMode(3, INPUT_PULLUP);
   pinMode(4, INPUT_PULLUP);
@@ -55,7 +56,7 @@ void loop() {
       
     }
   }
-  
+  //joystick pinleri || joystick pins
   X=analogRead(A1);
   Y=analogRead(A0);
   if ((X!=oldX) || (Y!=oldY))
